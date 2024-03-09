@@ -7,7 +7,7 @@ import urllib.error
 
 
 def get_weather_data(latitude, longitude,days):
-    '''getting data from API'''
+    '''getting data from web API'''
 
     # pylint: disable=W0212
     context = ssl._create_unverified_context()
@@ -20,5 +20,4 @@ def get_weather_data(latitude, longitude,days):
     response_data = response.read()
     response.close()
     api_data_obj = json.loads(response_data)
-    print(api_data_obj)
     return api_data_obj
