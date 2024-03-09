@@ -1,0 +1,1 @@
+Transposition ciphers are ciphers where the message you want to encrypt is scrambled based on the size of a secret key
